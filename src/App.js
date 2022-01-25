@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Counter from './components/Counter';
+
+const divStyle = {
+	color: 'black',
+	border: '3px solid #000',
+	margin: '5px',
+	padding: '10px',
+	width: '50%'
+};
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+		<div>
+		  <h1>Aplicação de Contador usando Redux</h1>
+
+			<h2>Contador</h2>
+
+			<h3>Componente: Counter</h3>
+			<div style={divStyle}>
+				<Counter />
+			</div>
+
+
+
+
+		</div>
   );
 }
 
